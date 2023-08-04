@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <script defer src="./script/vendor.js"></script>
+    <script defer src="./script/script.js"></script>
+  </head>
+  <body>
+    <div class="gamecontainer">
+      <p class="title">MONSTER KILLER</p>
+      <div class="playerwrap">
+        <div class="monster">
+          <img src="./monster.png" alt="monster" />
+          <p>MONSTER</p>
+        </div>
+        <p class="vs">VS</p>
+        <div class="player">
+          <img src="./knight.png" alt="player" />
+          <p><span id="bonuslife">1</span>PLAYER</p>
+        </div>
+      </div>
+      <div class="healthbarwrap">
+        <div id="monsterhealth"></div>
+        <div id="playerhealth"></div>
+      </div>
+      <div class="gamebtnwrap">
+        <button id="attack">ATTACK</button>
+        <button id="strongattack">STRONG ATTACK</button>
+        <button id="heal">HEAL</button>
+        <button id="showlog">SHOW LOG</button>
+      </div>
+      <p class="start">Press 'Enter' to START!</p>
+    </div>
+  </body>
+</html>

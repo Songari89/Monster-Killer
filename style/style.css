@@ -1,0 +1,99 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+.gamecontainer {
+  width: 650px;
+  margin: 10px auto;
+  padding: 20px 0;
+  background-color: rgb(40, 40, 83);
+}
+.title {
+  font-size: 45px;
+  font-weight: 900;
+  color: rgb(255, 218, 11);
+}
+.playerwrap {
+  width: 600px;
+  display: flex;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.vs {padding-top: 70px;
+  font-size: 30px;
+}
+.monster {
+  margin-left: 0;
+}
+.monster>img {
+  width: 150px;
+  height: 150px;
+}
+.monster>p {
+  text-align: left;
+  margin-left: 15px;
+}
+.player {
+  margin-right: 0px;
+}
+.player>img {
+  width: 150px;
+  height: 150px;
+}
+.player>p {
+  text-align: right;
+  margin-right: 15px;
+}
+#bonuslife {
+  display: inline-block;
+  width: 20px;
+  margin: 0 10px;
+  border-radius: 7px;
+  font-size: 15px;
+  background-color: rgb(185, 12, 12);
+  color: #ddd;
+  
+}
+.healthbarwrap{
+  width: 600px;
+  height: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+#monsterhealth {
+  width: 300;
+  height: 50px;
+  margin-left: 0;
+  background-color: rgb(16, 9, 216);
+}
+#playerhealth {
+  width: 300;
+  height: 50px;
+  margin-right: 0;
+  background-color: rgb(192, 10, 10);
+}
+.gamebtnwrap {
+  width: 650px;
+  display: flex;
+  justify-content: center;
+}
+button {
+  width: 100px;
+  height: 50px;
+  margin: 30px 10px 10px 10px;
+  padding: 0;
+  border-radius: 5px;
+  color: #333;
+  
+}
+button:hover {
+  font-weight: 600;
+  background-color: rgb(255, 218, 11)
+}
+.start {
+  color: #ddd;
+}
