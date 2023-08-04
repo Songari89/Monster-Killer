@@ -47,9 +47,13 @@ function resetGame(value) {
   changeHealthBar();
 }
 
-function removeBonusLife() {
-    bonusLife.parentNode.removeChild(bonusLife);
-  }
+function setBonusLife(isBonusLife) {
+  return isBonusLife? bonusLife.style.setProperty("display", "inline-block") : bonusLife.style.setProperty("display","none")
+}
+
+// function removeBonusLife() {
+//     bonusLife.parentNode.removeChild(bonusLife);
+//   }
 
 
 function setPlayerHealth(health) {
