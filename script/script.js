@@ -2,6 +2,7 @@ const ATTACK_VALUE = 70;
 const MONSTER_ATTACK_VALUE = 80;
 const STRONG_ATTACK_VALUE = 95;
 const HEAL_VALUE = 50;
+let hasBonusLife = true;
 let logEntry;
 
 let health = chosenHealthBar;
@@ -9,18 +10,19 @@ let health = chosenHealthBar;
 function endRound() {
   const initialHealth = playerHealthBar;
   dealPlayerDamage(MONSTER_ATTACK_VALUE);
-  if (playerHealthBar <= 1 && bonusLife) {
+  if (playerHealthBar <= 1 && hasBonusLife) {
+    hasBonusLife = false;
     removeBonusLife();
     setPlayerHealth(initialHealth);
     alert("Bonus Life saved you!");
   }
-  if (monsterHealthBar <= 5) {
+  if (monsterHealthBar <= 1) {
     alert("You Win!");
     monsterHealthBar = 0;
-  } else if (playerHealthBar <= 5) {
+  } else if (playerHealthBar <= 1) {
     alert("You lost!");
     playerHealthBar = 0;
-  } else if (monsterHealthBar <= 5 && playerHealthBar <= 5) {
+  } else if (monsterHealthBar <= 1 && playerHealthBar <= 1) {
     alert("You have a draw!");
     monsterHealthBar = 0;
     playerHealthBar = 0;

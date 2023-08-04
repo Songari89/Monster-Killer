@@ -8,7 +8,7 @@ const strongattackBtn = document.getElementById("strongattack");
 const healBtn = document.getElementById("heal");
 const showLogBtn = document.getElementById("showlog");
 
-const userEnterValue = prompt('You Enter Life for You and Monster.','300') 
+const userEnterValue = prompt("You Enter Life for You and Monster.", "300");
 
 let chosenHealthBar = userEnterValue;
 let monsterHealthBar = chosenHealthBar;
@@ -21,7 +21,6 @@ function changeHealthBar() {
   monsterHealth.style.setProperty("width", `${monsterHealthBar}px`);
   playerHealth.style.setProperty("width", `${playerHealthBar}px`);
 }
-
 
 //monster, player damage setting
 function dealMonsterDamage(damage) {
@@ -43,12 +42,13 @@ function incresePlayerHealth(healValue) {
 function resetGame(value) {
   playerHealthBar = value;
   monsterHealthBar = value;
-  changeHealthBar()
+  changeHealthBar();
 }
 
 function removeBonusLife() {
-  bonusLife.parentNode.removeChild(bonusLife);
-}
+    bonusLife.parentNode.removeChild(bonusLife);
+  }
+
 
 function setPlayerHealth(health) {
   playerHealthBar = health;
