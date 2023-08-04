@@ -6,8 +6,6 @@ let hasBonusLife = true;
 let gameover = false;
 let logEntry;
 
-let health = chosenHealthBar;
-
 function endRound() {
   if (gameover) {
     alert("Game Over");
@@ -17,7 +15,7 @@ function endRound() {
   dealPlayerDamage(MONSTER_ATTACK_VALUE);
   if (playerHealthBar <= 1 && hasBonusLife) {
     hasBonusLife = false;
-    setBonusLife(hasBonusLife)
+    setBonusLife(hasBonusLife);
     // removeBonusLife();
     setPlayerHealth(initialHealth);
     alert("Bonus Life saved you!");

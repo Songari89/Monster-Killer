@@ -10,9 +10,9 @@ const showLogBtn = document.getElementById("showlog");
 
 const resetBtn = document.getElementById("reset")
 
-const userEnterValue = prompt("You Enter Life for You and Monster.", "300");
+// const userEnterValue = prompt("You Enter Life for You and Monster.", "300");
 
-let chosenHealthBar = userEnterValue;
+let chosenHealthBar = 300;
 let monsterHealthBar = chosenHealthBar;
 let playerHealthBar = chosenHealthBar;
 
