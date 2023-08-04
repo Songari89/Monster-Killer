@@ -8,6 +8,8 @@ const strongattackBtn = document.getElementById("strongattack");
 const healBtn = document.getElementById("heal");
 const showLogBtn = document.getElementById("showlog");
 
+const resetBtn = document.getElementById("reset")
+
 const userEnterValue = prompt("You Enter Life for You and Monster.", "300");
 
 let chosenHealthBar = userEnterValue;

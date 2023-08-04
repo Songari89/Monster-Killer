@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
@@ -22,28 +22,29 @@
   font-size: 18px;
   font-weight: 600;
 }
-.vs {padding-top: 70px;
+.vs {
+  padding-top: 70px;
   font-size: 30px;
 }
 .monster {
   margin-left: 0;
 }
-.monster>img {
+.monster > img {
   width: 150px;
   height: 150px;
 }
-.monster>p {
+.monster > p {
   text-align: left;
   margin-left: 15px;
 }
 .player {
   margin-right: 0px;
 }
-.player>img {
+.player > img {
   width: 150px;
   height: 150px;
 }
-.player>p {
+.player > p {
   text-align: right;
   margin-right: 15px;
 }
@@ -55,9 +56,8 @@
   font-size: 15px;
   background-color: rgb(185, 12, 12);
   color: #ddd;
-  
 }
-.healthbarwrap{
+.healthbarwrap {
   width: 600px;
   height: 50px;
   display: flex;
@@ -88,12 +88,22 @@ button {
   padding: 0;
   border-radius: 5px;
   color: #333;
-  
 }
 button:hover {
   font-weight: 600;
-  background-color: rgb(255, 218, 11)
+  background-color: rgb(255, 218, 11);
 }
 .start {
   color: #ddd;
+}
+#reset {
+  width: 80px;
+  height: 25px;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+#reset:hover {
+  background-color: #333;
+  color: #ddd;
+  font-weight: 500;
 }

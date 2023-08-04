@@ -28,6 +28,9 @@ function endRound() {
     playerHealthBar = 0;
   }
   changeHealthBar();
+}
+
+function resetHandler() {
   if (playerHealthBar === 0 || monsterHealthBar === 0) {
     resetGame(chosenHealthBar);
   }
@@ -56,3 +59,4 @@ function healHandler() {
 attackBtn.addEventListener("click", attackHandler);
 strongattackBtn.addEventListener("click", strongAttackHandler);
 healBtn.addEventListener("click", healHandler);
+resetBtn.addEventListener("click", resetHandler);
