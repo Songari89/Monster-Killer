@@ -8,7 +8,7 @@ const strongattackBtn = document.getElementById("strongattack");
 const healBtn = document.getElementById("heal");
 const showLogBtn = document.getElementById("showlog");
 
-const resetBtn = document.getElementById("reset")
+const resetBtn = document.getElementById("reset");
 
 // const userEnterValue = prompt("You Enter Life for You and Monster.", "300");
 
@@ -48,13 +48,14 @@ function resetGame(value) {
 }
 
 function setBonusLife(isBonusLife) {
-  return isBonusLife? bonusLife.style.setProperty("display", "inline-block") : bonusLife.style.setProperty("display","none")
+  return isBonusLife
+    ? bonusLife.style.setProperty("display", "inline-block")
+    : bonusLife.style.setProperty("display", "none");
 }
 
 // function removeBonusLife() {
 //     bonusLife.parentNode.removeChild(bonusLife);
 //   }
-
 
 function setPlayerHealth(health) {
   playerHealthBar = health;
